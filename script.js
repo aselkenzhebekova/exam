@@ -6,11 +6,6 @@ const pTag = document.querySelector('p')
 
 let num3 = 0
 let num4 = 0
-
-let plus1 = 0
-let minus1 = 0
-let multiply1 = 0
-let divide1 = 0
 let znak1
 let znak2
 
@@ -27,19 +22,19 @@ znak.addEventListener('input', (e) => {
 }) 
 
 btn.addEventListener ('click', () => {
-  if (znak1 == '+') {
+  if (znak1 === '+') {
     pTag.innerText = Number(num3) + Number(num4)
   }
-  else if (znak1 == '-') {
+  else if (znak1 === '-') {
     pTag.innerText = num3 - num4
   }
-  else if (znak1 == '*') {
+  else if (znak1 === '*') {
     pTag.innerText = num3 * num4
   }
-  else if (znak1 == '/') {
+  else if (znak1 === '/') {
     pTag.innerText = num3 / num4
   }
-  else if (znak1 == '%') {
+  else if (znak1 === '%') {
     pTag.innerText = num3 % num4
   }
   else {
